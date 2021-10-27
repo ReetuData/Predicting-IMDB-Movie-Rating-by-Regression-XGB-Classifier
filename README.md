@@ -1,2 +1,2 @@
 # Project-1
-IMDB Movie Rating By Regression Model & XGB classifier
+Predicting IMDB Movie Rating by Regression & XGB Classifier 
