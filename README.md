@@ -6,6 +6,9 @@
 
 ## Setup
 
+## Getting Started With This Template
+
+pip install -U cookiecutter
 
 
 ## Problem
@@ -20,10 +23,6 @@ The other goal of this project was: **“To compare and figure the most applicab
 The proposed models intend to predict perfect accuracy, but ratings come from the complicated human nature we can see some assumptions here. Predictions that lie within +/-1 rating range can be considered for the linear regression model. 
 
 So, later we will check the accuracy of the Supervised Machine Learning technique and how accurately it can predict the ratings of movies. 
-
-## Getting Started With This Template
-
-pip install -U cookiecutter
 
 
 ## Data 
