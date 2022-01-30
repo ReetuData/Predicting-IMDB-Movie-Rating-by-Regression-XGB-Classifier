@@ -1,5 +1,11 @@
 # Predicting IMDB Movie Rating by Regression & XGB Classifier 
 
+##  Table of contents
+
+## Technologies
+
+## Setup
+
 
 
 ## Problem
@@ -30,69 +36,142 @@ https://www.imdb.com
  
 
 
- ## Motivation
+## Installation
 
-## Method and results
-Method
-Regression model: 
-We are going to start our modeling with linear regression because of its wide usability, fast run time, easy to use, and high interpretability. It is the basis for many other methods. (Regression Link)
+## Method 
 
-It is a type of predictive modeling that is used to find the relationship between dependent and independent variables. Regression is widely used for analyzing data by looking at the fit of a curve/line. The fit of the curve is a line connecting to the data points in such a way that reduces the distances between the data points from the fitting line. 
+### Regression model: 
+We are going to start our modeling with linear regression because of its wide usability, fast run time, easy to use, and high interpretability. It is the basis for many other methods. [See here for more details](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/Model%20basics%20.docx)
 
-In the regression analysis, we can predict the value of an unknown variable by looking at its relationship with the known variable. In the linear regression method, the dependent variable is continuous, the independent variable can be continuous or discrete and regression lines come linear. 
+## Model Validation
 
-It is represented by an equation Y=a+b*X + c,
-where a is the intercept,
-b is the slope of the line and
-c is the error term.
+### Lasso method: l1 regularization 
 
-A regression line can be obtained by Least Square Method. Its calculation is based on finding the best-fit line of observed data by minimizing the sum of the squares of the vertical deviations from each data point to the line. between positive and negative values. The regression model can be evaluated by using the metric R-square. 
+We will be starting model validation with Lasso. Lasso regression are some of the simple techniques to reduce model complexity and prevent over-fitting which may result from simple linear regression. So, Lasso regression not only helps in reducing over-fitting, but it can help us in feature selection. [See here for more details](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/Model%20basics%20.docx)
 
-#Model Validation
-
-
-
-
-
-
-##Lasso method: l1 regularization (link)
-
-We will be starting model validation with Lasso. Lasso regression are some of the simple techniques to reduce model complexity and prevent over-fitting which may result from simple linear regression. So, Lasso regression not only helps in reducing over-fitting, but it can help us in feature selection.
-
-Lasso is standing for Least Absolute Shrinkage and Selection Operator. It can penalize the absolute size of the regression coefficients and reduce the variability which can improve the accuracy of linear regression models. 
-
-The larger penalty can further shrink the estimates towards zero which is important for the variable selections. If variable groups are highly correlated, lasso shrinks the others to zero and picks only one from them. 
-
-##XGBoost Machine Learning 
+### XGBoost Machine Learning 
 
 The main benefits of using XGBoost are high execution speed and model performance. In both classification and regression predictive modeling, XGBoost dominates structured or tabular datasets. 
 
-XG boost (Extreme Gradient Boosting) is widely used for classification and regression problems and gives better performance than other algorithms. It is the execution of gradient boosted decision trees. It is good for the small to medium tabular or structured data. 
+XG boost (Extreme Gradient Boosting) is widely used for classification and regression problems and gives better performance than other algorithms. It is the execution of gradient boosted decision trees. It is good for the small to medium tabular or structured data. [See here for more details](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/Model%20basics%20.docx)
+                                                                                                                                                                               The default metric for the classification type of problem is an error and for regression, the metric is RMSE. 
 
-It is used for supervised machine learning algorithms. It handles overfitting by using techniques of regularization. It is enabled with the inbuilt Cross-Validation (CV) function. It can handle the missing values by finding the trends and catching them. It has the power to save the data matrix and reload. 
+### Linear Regression Vs XGBoost
 
-XGboost carries out the gradient boosting decision tree algorithm. Boosting is an ensemble technique that enables the model to make a prediction based on resolving the errors in the new model that has come from the old model. Model performance can be improved by tuning parameters.
-                                                                                                                                                                                                                  
-                                                                                                                                                                                                                                                                               These default metrics for the classification type of problem is an error and for regression metric is RMSE. 
+Linear regression is a parametric model. It assumes the target variable can be expressed as a linear combination of the independent variables (plus error). Gradient boosted trees are nonparametric: they will approximate any function.
 
-## Linear Regression Vs XGBoost
-
-Linear regression is a parametric model: it assumes the target variable can be expressed as a linear combination of the independent variables (plus error). Gradient boosted trees are nonparametric: they will approximate any function.
-
-XGboost deprecated the objective Reg; Linear. It has been replaced by reg: squared error, and has always meant minimizing the squared error, just as in linear regression.
-So, boost will generally fit training data much better than linear regression, but that also means it is prone to overfitting, and it is less easily interpreted. Either one may end up being better, depending on your data and your needs. (link)
+XGboost deprecated the objective Reg: Linear. It has been replaced by reg: squared error, and has always meant minimizing the squared error, just as in linear regression.
+So, boost will generally fit training data much better than linear regression, but that also means it is prone to overfitting, and it is less easily interpreted. Either one may end up being better, depending on your data and your needs.
 
 We have started from the Regression model and later moved from lasso to XGboost Classifier. 
 
-#Algorithms Evaluation 
+## Algorithms Evaluation 
 
-To, implement and compare the algorithms there must be a metric to compare. Mean Absolute Error (MAE), Mean Square Error (MSE), and Root-Mean Squared Error (RMSE) are some of the most common for regression algorithms.
+To implement and compare the algorithms there must be a metric to compare. Mean Absolute Error (MAE), Mean Square Error (MSE), and Root-Mean Squared Error (RMSE) are some of the most common for regression algorithms.
 
 MAE gets all the delta between the predicted value and the actual value, then adds them up, and then divides it by the number of predicted values, it is a very basic but efficient way of measuring error. 
 MSE error works similarly but squares the delta, then adds them up and divides them, making it more practical to differentiate between smaller numbers. 
 RMSE is just the square root of MSE, which is used for determining accuracy. 
 
-# Repository Overview
+## Data Preparation and Cleaning
+
+Data Cleaning report
+
+### Step 1 Merging files 
+
+The data sets are pulled in seven small tsv files (see a full list here). We have loaded and merged them all as a single Data Frame named Final_DF with 14999145 rows and 17 columns. (See Link for more details)
+
+### Step 2 Handling duplicate, unique, and missing values:
+After getting our final Data Frame, we have checked for the Duplicates, Index setting, datatypes, columns names, null/missing, and unique values. (for more details here) To make our data Frame tidy, we have removed all duplicate values, renamed columns name as appropriate, checked and filled null values. We have also performed data type conversion as per the nature of values. (See Link for more details)
+
+### Step 3 Confirming data cleanliness and value types: 
+
+There are a few more things to check column by column. This process is to make sure our data is all set for further processing. We found a few columns like the year, birthyear_Director, death_year were as object types. We have converted it to numerical as per the types of the variables. (See full details and report here)  
+
+We have calculated the age of the director by subtracting the death_year from the birth_year. We have also derived the age of the movie by subtracting the release year from the current year. Later, We have divided movies into decades based on the age of the movie. 
+ 
+One final step we have performed before moving further was checking any null/missing values and datatypes. To make sure we have required values as needed. ( see here) 
+
+## EDA
+
+EDA report
+
+We have performed Exploratory data Analysis to perform initial investigations on data with the help of summary statistics and graphical representations. (See here for more details) 
+
+
+## Data preprocessing: Encoding
+
+Data preprocessing Report
+
+Before fitting our data to any model, we must make sure all our categorical features areas are in numerical form. Here we have categorical columns like titleId, title, region, titleType, directors, writers, primaryName_Director, primaryProfession_director, Dir_knownForTitles, Decade. We have used oneHotencoder to convert it into numerical columns. Columns like genres, Dir_knownForTitles contain more than comma-separated values in single columns. For that, we have used the multilabelBinarizer which can easily deal with multi values.
+ 
+ We have concatenated both encoded data frames and now our data is ready to fit in the model ( See here for more details) 
+ 
+## Modeling
+
+Modeling report
+
+We have started with the regression model. We have fit the model on to train the data set and predict the value of the test data set as y_pred. The model performance was evaluated from the r_squared values, which was 0.32 in our case. (see here for more details) 
+
+## Model Validation 
+
+Model validation 
+
+We have used the Lasso method, XGBoost Regressor, and XGBClassifier for the model validation. We have got 0.12, 0.31, and 0.14 rmse respectively. It seems XGBoost Regressor is giving better performance in all other methods. ( see here for more details) 
+
+## Hyperparameter Tunning 
+
+Hyperparameter tunning report
+ 
+## Tree-based parameters
+
+Learning rate (prevent overfitting), max_depth (more complex and overfit model with high value), gamma (conservative algorithm with large value), min_child_weigh (conservative algorithm with larger min_child_weight), colsample_bytree, min_child_weight, colsample_bytree, and Subsample are a few parameters which we have tuned here (See here for details Link1, link2) 
+
+## Tunning regularization parameters
+
+We have tuned Lambda: L2 regularization and  Alpha: L1 regularization term on weights. Increasing this value will make the model more conservative. The default value is 1 and the best lambda was 1. The default value for Alpha is 0. Our best alpha was 0.1 (See here for more details link1, link2)
+
+After feeding all the best tree-based and regularization parameters, we have found the five best features which are playing an important role in increasing the movie ratings. These 5 features are f12135 score 97, f12137 score 95, f8741 score 60, f12136 score 60, f7980 score 49
+
+## Hyper-parameter tuning by grid search
+
+We have also run the gird search to find the best parameter values for the model. After running grid search the best values were colsample_bytree -0.5, learning_rate - 0.01, max_depth - 7, min_child_weight - 1, n_estimators - 200, subsample - 0.6. 
+The best features we found were f7979 score 150, f12090 score 73,f8697 score 65, f11259 score 63, f12092 score 56. ( see here fro more details) 
+
+## Hyper-parameter tuning by Random Search
+
+We have also tried the Random search to find the best parameter values for the model. After running random search, the best values were subsample - 0.6, n_estimators - 25, min_child_weight - 10, max_depth - 11, learning_rate - 1.0, colsample_bytree - 0.9 
+The best features we found h were f7976 score 542, f7979 score 484, f12136 score 477, f12137 score 432, f8741 score 384 (see here for more details) 
+
+## Credits
+
+Thanks, Vivek Kumar for being an amazing Springboard mentor throughout my course work. 
+
+## References
+
+https://www.diva-portal.org/smash/get/diva2:1574293/FULLTEXT01.pdf
+
+https://towardsdatascience.com/ridge-and-lasso-regression-a-complete-guide-with-python-scikit-learn-e20e34bcbf0b
+
+https://machinelearningmastery.com/xgboost-for-regression/
+
+https://www.ritchieng.com/machine-learning-evaluate-linear-regression-model/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Repository Overview
 
 ├── README.md
 ├── data
@@ -106,13 +185,7 @@ RMSE is just the square root of MSE, which is used for determining accuracy.
     └── paper
 ## More resources
 
-https://www.diva-portal.org/smash/get/diva2:1574293/FULLTEXT01.pdf
 
-https://towardsdatascience.com/ridge-and-lasso-regression-a-complete-guide-with-python-scikit-learn-e20e34bcbf0b
-
-https://machinelearningmastery.com/xgboost-for-regression/
-
-https://www.ritchieng.com/machine-learning-evaluate-linear-regression-model/
 
 
 ## About
