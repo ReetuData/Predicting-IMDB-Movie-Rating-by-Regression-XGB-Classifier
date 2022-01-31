@@ -160,6 +160,7 @@ The best features we found h were f7976 score 542, f7979 score 484, f12136 score
 ## Credits
 
 Thanks, Vivek Kumar for being an amazing Springboard mentor throughout my course work. 
+I thank Jaret Andre for giving me all strength and support for my work.
 
 ## References
 
