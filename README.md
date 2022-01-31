@@ -2,29 +2,30 @@
 
 ##  Table of contents
 
-Technologies
-Setup
-Installation
-Problem
-Data 
-Model - Regression
-Model validation - Lasso method
-		XGBoost model
-Algorithm Evaluation
-Step 1 Data Preparation and Cleaning
-Step 2 Handling duplicate, unique, and missing values
-Step 3 Confirming data cleanliness and value types
-EDA
-Data Preprocseeing: Encoding
-Model
-Model validation
-Hyperparameter Tunning
-	Tuning Tree-based Tunning
-	Tuning Regularization parameters
-	Tuning using grid search
-	tunining using random search
-Cresits
-More resources
+	>Technologies
+	>Setup
+	>Installation
+	>Problem
+	>Data 
+	>Model - Regression
+	>Model validation
+		>>Lasso method
+		>>XGBoost model
+	>Algorithm Evaluation
+		>>Data Preparation and Cleaning
+		>>Handling duplicate, unique, and missing values
+		>>Confirming data cleanliness and value types
+	>EDA
+	>Data Preprocseeing: Encoding
+	>Model
+	>Model validation
+	>Hyperparameter Tunning
+		>>Tuning Tree-based Tunning
+		>>Tuning Regularization parameters
+		>>Tuning using grid search
+		>>tunining using random search
+	>Credits
+	>More resources
 
 ## Technologies
 ## Installation
@@ -62,7 +63,7 @@ We are going to start our modeling with linear regression because of its wide us
 
 We will be starting model validation with Lasso. Lasso regression are some of the simple techniques to reduce model complexity and prevent over-fitting which may result from simple linear regression. So, Lasso regression not only helps in reducing over-fitting, but it can help us in feature selection. [See here for more details](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/Model%20basics%20.docx)
 
-### XGBoost Machine Learning 
+### XGBoost Method
 
 The main benefits of using XGBoost are high execution speed and model performance. In both classification and regression predictive modeling, XGBoost dominates structured or tabular datasets. 
 
