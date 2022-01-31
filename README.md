@@ -2,14 +2,33 @@
 
 ##  Table of contents
 
+Technologies
+Setup
+Installation
+Problem
+Data 
+Model - Regression
+Model validation - Lasso method
+		XGBoost model
+Algorithm Evaluation
+Step 1 Data Preparation and Cleaning
+Step 2 Handling duplicate, unique, and missing values
+Step 3 Confirming data cleanliness and value types
+EDA
+Data Preprocseeing: Encoding
+Model
+Model validation
+Hyperparameter Tunning
+	Tuning Tree-based Tunning
+	Tuning Regularization parameters
+	Tuning using grid search
+	tunining using random search
+Cresits
+More resources
+
 ## Technologies
-
+## Installation
 ## Setup
-
-## Getting Started With This Template
-
-pip install -U cookiecutter
-
 
 ## Problem
 
@@ -29,13 +48,8 @@ So, later we will check the accuracy of the Supervised Machine Learning techniqu
 
 Data has been scraped from the publicly available website https://www.imdb.com. Kaggle web scraping project and datasets are of sufficient size to develop a good predictive model for movie ratings. To view the original data and related information click below link.
 
-Kaggle Dataset\
+[Kaggle Dataset](https://www.kaggle.com/stefanoleone992/imdb-extensive-dataset)\
 https://www.imdb.com   
-
- 
-
-
-## Installation
 
 ## Method 
 
@@ -76,14 +90,14 @@ RMSE is just the square root of MSE, which is used for determining accuracy.
 
 Data Cleaning report
 
-### Step 1 Merging files 
+### Merging files 
 
 The data sets are pulled in seven small tsv files (see a full list here). We have loaded and merged them all as a single Data Frame named Final_DF with 14999145 rows and 17 columns. (See Link for more details)
 
-### Step 2 Handling duplicate, unique, and missing values:
+### Handling duplicate, unique, and missing values
 After getting our final Data Frame, we have checked for the Duplicates, Index setting, datatypes, columns names, null/missing, and unique values. (for more details here) To make our data Frame tidy, we have removed all duplicate values, renamed columns name as appropriate, checked and filled null values. We have also performed data type conversion as per the nature of values. (See Link for more details)
 
-### Step 3 Confirming data cleanliness and value types: 
+### Confirming data cleanliness and value types
 
 There are a few more things to check column by column. This process is to make sure our data is all set for further processing. We found a few columns like the year, birthyear_Director, death_year were as object types. We have converted it to numerical as per the types of the variables. (See full details and report here)  
 
@@ -96,7 +110,6 @@ One final step we have performed before moving further was checking any null/mis
 EDA report
 
 We have performed Exploratory data Analysis to perform initial investigations on data with the help of summary statistics and graphical representations. (See here for more details) 
-
 
 ## Data preprocessing: Encoding
 
@@ -122,11 +135,11 @@ We have used the Lasso method, XGBoost Regressor, and XGBClassifier for the mode
 
 Hyperparameter tunning report
  
-## Tree-based parameters
+## Tuning of Tree-based parameters
 
 Learning rate (prevent overfitting), max_depth (more complex and overfit model with high value), gamma (conservative algorithm with large value), min_child_weigh (conservative algorithm with larger min_child_weight), colsample_bytree, min_child_weight, colsample_bytree, and Subsample are a few parameters which we have tuned here (See here for details Link1, link2) 
 
-## Tunning regularization parameters
+## Tuning regularization parameters
 
 We have tuned Lambda: L2 regularization and  Alpha: L1 regularization term on weights. Increasing this value will make the model more conservative. The default value is 1 and the best lambda was 1. The default value for Alpha is 0. Our best alpha was 0.1 (See here for more details link1, link2)
 
@@ -168,26 +181,6 @@ https://www.ritchieng.com/machine-learning-evaluate-linear-regression-model/
 
 
 
-
-
-## Repository Overview
-
-├── README.md
-├── data
-├── gen
-│   ├── analysis
-│   ├── data-preparation
-│   └── paper
-└── src
-    ├── analysis
-    ├── data-preparation
-    └── paper
-## More resources
-
-
-
-
-## About
 
 
 
