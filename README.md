@@ -2,30 +2,30 @@
 
 ##  Table of contents
 
-	>Technologies
-	>Setup
-	>Installation
-	>Problem
-	>Data 
-	>Model - Regression
-	>Model validation
-		>>Lasso method
-		>>XGBoost model
-	>Algorithm Evaluation
-		>>Data Preparation and Cleaning
-		>>Handling duplicate, unique, and missing values
-		>>Confirming data cleanliness and value types
-	>EDA
-	>Data Preprocseeing: Encoding
-	>Model
-	>Model validation
-	>Hyperparameter Tunning
-		>>Tuning Tree-based Tunning
-		>>Tuning Regularization parameters
-		>>Tuning using grid search
-		>>tunining using random search
-	>Credits
-	>More resources
+	Technologies
+	Setup
+	Installation
+	Problem
+	Data 
+	Model - Regression
+	Model validation
+		Lasso method
+		XGBoost model
+	Algorithm Evaluation
+		Data Preparation and Cleaning
+		Handling duplicate, unique, and missing values
+		Confirming data cleanliness and value types
+	EDA
+	Data Preprocseeing: Encoding
+	Model
+	Model validation
+	Hyperparameter Tunning
+		Tuning Tree-based Tunning
+		Tuning Regularization parameters
+		Tuning using grid search
+		tunining using random search
+	Credits
+	More resources
 
 ## Technologies
 ## Installation
