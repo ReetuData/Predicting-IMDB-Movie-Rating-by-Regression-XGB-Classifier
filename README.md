@@ -114,17 +114,17 @@ We have performed Exploratory data Analysis to perform initial investigations on
 
 ## Data preprocessing: Encoding
 
-[Data preprocessing Report link1](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/4%20Data%20handling%20for%20%20Preprocessing%20and%20%20Scaling%20.ipynb)[link2](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/5%20Data%20encoding%20and%20Modeling.ipynb)
+[Data preprocessing Report link1](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/4%20Data%20handling%20for%20%20Preprocessing%20and%20%20Scaling%20.ipynb),[link2](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/5%20Data%20encoding%20and%20Modeling.ipynb)
 
 Before fitting our data to any model, we must make sure all our categorical features areas are in numerical form. Here we have categorical columns like titleId, title, region, titleType, directors, writers, primaryName_Director, primaryProfession_director, Dir_knownForTitles, Decade. We have used oneHotencoder to convert it into numerical columns. Columns like genres, Dir_knownForTitles contain more than comma-separated values in single columns. For that, we have used the multilabelBinarizer which can easily deal with multi values.
  
- We have concatenated both encoded data frames and now our data is ready to fit in the model [Link1](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/4%20Data%20handling%20for%20%20Preprocessing%20and%20%20Scaling%20.ipynb)[link2](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/5%20Data%20encoding%20and%20Modeling.ipynb) 
+ We have concatenated both encoded data frames and now our data is ready to fit in the model [Link1](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/4%20Data%20handling%20for%20%20Preprocessing%20and%20%20Scaling%20.ipynb),[link2](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/5%20Data%20encoding%20and%20Modeling.ipynb) 
  
 ## Modeling
 
 [Modeling report](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/5%20Data%20encoding%20and%20Modeling.ipynb)
 
-We have started with the regression model. We have fit the model on to train the data set and predict the value of the test data set as y_pred. The model performance was evaluated from the r_squared values, which was 0.32 in our case. [Link1](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/tree/main/IMDB%20movie%20Ratings/Project%20report)[link2](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/5%20Data%20encoding%20and%20Modeling.ipynb) 
+We have started with the regression model. We have fit the model on to train the data set and predict the value of the test data set as y_pred. The model performance was evaluated from the r_squared values, which was 0.32 in our case. [Link1](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/tree/main/IMDB%20movie%20Ratings/Project%20report),[link2](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/5%20Data%20encoding%20and%20Modeling.ipynb) 
 
 ## Model Validation 
 
