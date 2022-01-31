@@ -2,8 +2,8 @@
 
 ##  Table of contents
 
-	[Technologies](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/README.md#technologies)
-	[Technologies](README.md#technologies)
+	[Technologies](#https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/README.md#technologies)
+	[Technologies](#README.md#technologies)
 	Setup
 	Installation
 	Problem
