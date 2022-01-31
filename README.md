@@ -89,14 +89,14 @@ RMSE is just the square root of MSE, which is used for determining accuracy.
 
 ## Data Preparation and Cleaning
 
-Data Cleaning report
+[Data Cleaning report](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/1%20Cleaning%20and%20merging%20Data%20part%20-1%20.ipynb)
 
 ### Merging files 
 
-The data sets are pulled in seven small tsv files (see a full list here). We have loaded and merged them all as a single Data Frame named Final_DF with 14999145 rows and 17 columns. [Link1](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/tree/main/IMDB%20movie%20Ratings/Project%20report) [link2] ()
+The data sets are pulled in seven small tsv files (see a full list here). We have loaded and merged them all as a single Data Frame named Final_DF with 14999145 rows and 17 columns. [Link1](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/tree/main/IMDB%20movie%20Ratings/Project%20report) [link2](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/1%20Cleaning%20and%20merging%20Data%20part%20-1%20.ipynb)
 
 ### Handling duplicate, unique, and missing values
-After getting our final Data Frame, we have checked for the Duplicates, Index setting, datatypes, columns names, null/missing, and unique values. (for more details here) To make our data Frame tidy, we have removed all duplicate values, renamed columns name as appropriate, checked and filled null values. We have also performed data type conversion as per the nature of values.[Link1](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/tree/main/IMDB%20movie%20Ratings/Project%20report) [link2] ()
+After getting our final Data Frame, we have checked for the Duplicates, Index setting, datatypes, columns names, null/missing, and unique values. (for more details here) To make our data Frame tidy, we have removed all duplicate values, renamed columns name as appropriate, checked and filled null values. We have also performed data type conversion as per the nature of values.[Link1](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/tree/main/IMDB%20movie%20Ratings/Project%20report) [link2](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/1%20Cleaning%20and%20merging%20Data%20part%20-1%20.ipynb)
 
 ### Confirming data cleanliness and value types
 
@@ -104,7 +104,7 @@ There are a few more things to check column by column. This process is to make s
 
 We have calculated the age of the director by subtracting the death_year from the birth_year. We have also derived the age of the movie by subtracting the release year from the current year. Later, We have divided movies into decades based on the age of the movie. 
  
-One final step we have performed before moving further was checking any null/missing values and datatypes. To make sure we have required values as needed.[Link1](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/tree/main/IMDB%20movie%20Ratings/Project%20report) [link2] ()
+One final step we have performed before moving further was checking any null/missing values and datatypes. To make sure we have required values as needed.[Link1](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/tree/main/IMDB%20movie%20Ratings/Project%20report) [link2] (https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/1%20Cleaning%20and%20merging%20Data%20part%20-1%20.ipynb)
 
 ## EDA
 
