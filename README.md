@@ -23,7 +23,7 @@
 		Tuning Tree-based Tunning
 		Tuning Regularization parameters
 		Tuning using grid search
-		tunining using random search
+		tuning using random search
 	Credits
 	More resources
 
@@ -108,9 +108,9 @@ One final step we have performed before moving further was checking any null/mis
 
 ## EDA
 
-EDA report
+[EDA report](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/3%20data%20handling%20and%20EDA%20.ipynb)
 
-We have performed Exploratory data Analysis to perform initial investigations on data with the help of summary statistics and graphical representations. (See here for more details)[]
+We have performed Exploratory data Analysis to perform initial investigations on data with the help of summary statistics and graphical representations.[See here for more details](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/3%20data%20handling%20and%20EDA%20.ipynb)
 
 ## Data preprocessing: Encoding
 
