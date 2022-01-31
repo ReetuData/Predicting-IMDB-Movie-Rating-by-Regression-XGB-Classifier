@@ -55,19 +55,19 @@ https://www.imdb.com
 ## Method 
 
 ### Regression model: 
-We are going to start our modeling with linear regression because of its wide usability, fast run time, easy to use, and high interpretability. It is the basis for many other methods. [See here for more details](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/Model%20basics%20.docx)
+We are going to start our modeling with linear regression because of its wide usability, fast run time, easy to use, and high interpretability. It is the basis for many other methods. [See here for more details](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/tree/main/IMDB%20movie%20Ratings/Project%20report)
 
 ## Model Validation
 
 ### Lasso method: l1 regularization 
 
-We will be starting model validation with Lasso. Lasso regression are some of the simple techniques to reduce model complexity and prevent over-fitting which may result from simple linear regression. So, Lasso regression not only helps in reducing over-fitting, but it can help us in feature selection. [See here for more details](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/Model%20basics%20.docx)
+We will be starting model validation with Lasso. Lasso regression are some of the simple techniques to reduce model complexity and prevent over-fitting which may result from simple linear regression. So, Lasso regression not only helps in reducing over-fitting, but it can help us in feature selection. [See here for more details](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/tree/main/IMDB%20movie%20Ratings/Project%20report)
 
 ### XGBoost Method
 
 The main benefits of using XGBoost are high execution speed and model performance. In both classification and regression predictive modeling, XGBoost dominates structured or tabular datasets. 
 
-XG boost (Extreme Gradient Boosting) is widely used for classification and regression problems and gives better performance than other algorithms. It is the execution of gradient boosted decision trees. It is good for the small to medium tabular or structured data. [See here for more details](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/Model%20basics%20.docx)
+XG boost (Extreme Gradient Boosting) is widely used for classification and regression problems and gives better performance than other algorithms. It is the execution of gradient boosted decision trees. It is good for the small to medium tabular or structured data. [See here for more details](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/tree/main/IMDB%20movie%20Ratings/Project%20report)
                                                                                                                                                                                The default metric for the classification type of problem is an error and for regression, the metric is RMSE. 
 
 ### Linear Regression Vs XGBoost
@@ -93,10 +93,10 @@ Data Cleaning report
 
 ### Merging files 
 
-The data sets are pulled in seven small tsv files (see a full list here). We have loaded and merged them all as a single Data Frame named Final_DF with 14999145 rows and 17 columns. (See Link for more details)
+The data sets are pulled in seven small tsv files (see a full list here). We have loaded and merged them all as a single Data Frame named Final_DF with 14999145 rows and 17 columns. [Link1](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/tree/main/IMDB%20movie%20Ratings/Project%20report) [link2] ()
 
 ### Handling duplicate, unique, and missing values
-After getting our final Data Frame, we have checked for the Duplicates, Index setting, datatypes, columns names, null/missing, and unique values. (for more details here) To make our data Frame tidy, we have removed all duplicate values, renamed columns name as appropriate, checked and filled null values. We have also performed data type conversion as per the nature of values. (See Link for more details)
+After getting our final Data Frame, we have checked for the Duplicates, Index setting, datatypes, columns names, null/missing, and unique values. (for more details here) To make our data Frame tidy, we have removed all duplicate values, renamed columns name as appropriate, checked and filled null values. We have also performed data type conversion as per the nature of values.[Link1](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/tree/main/IMDB%20movie%20Ratings/Project%20report) [link2] ()
 
 ### Confirming data cleanliness and value types
 
@@ -104,57 +104,58 @@ There are a few more things to check column by column. This process is to make s
 
 We have calculated the age of the director by subtracting the death_year from the birth_year. We have also derived the age of the movie by subtracting the release year from the current year. Later, We have divided movies into decades based on the age of the movie. 
  
-One final step we have performed before moving further was checking any null/missing values and datatypes. To make sure we have required values as needed. ( see here) 
+One final step we have performed before moving further was checking any null/missing values and datatypes. To make sure we have required values as needed.[Link1](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/tree/main/IMDB%20movie%20Ratings/Project%20report) [link2] ()
 
 ## EDA
 
 EDA report
 
-We have performed Exploratory data Analysis to perform initial investigations on data with the help of summary statistics and graphical representations. (See here for more details) 
+We have performed Exploratory data Analysis to perform initial investigations on data with the help of summary statistics and graphical representations. (See here for more details)[]
 
 ## Data preprocessing: Encoding
 
-Data preprocessing Report
+[Data preprocessing Report]()
 
 Before fitting our data to any model, we must make sure all our categorical features areas are in numerical form. Here we have categorical columns like titleId, title, region, titleType, directors, writers, primaryName_Director, primaryProfession_director, Dir_knownForTitles, Decade. We have used oneHotencoder to convert it into numerical columns. Columns like genres, Dir_knownForTitles contain more than comma-separated values in single columns. For that, we have used the multilabelBinarizer which can easily deal with multi values.
  
- We have concatenated both encoded data frames and now our data is ready to fit in the model ( See here for more details) 
+ We have concatenated both encoded data frames and now our data is ready to fit in the model [See here for more details] ()
  
 ## Modeling
 
 Modeling report
 
-We have started with the regression model. We have fit the model on to train the data set and predict the value of the test data set as y_pred. The model performance was evaluated from the r_squared values, which was 0.32 in our case. (see here for more details) 
+We have started with the regression model. We have fit the model on to train the data set and predict the value of the test data set as y_pred. The model performance was evaluated from the r_squared values, which was 0.32 in our case. [Link1](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/tree/main/IMDB%20movie%20Ratings/Project%20report)[link2] () 
 
 ## Model Validation 
 
-Model validation 
+[Model validation]()
 
-We have used the Lasso method, XGBoost Regressor, and XGBClassifier for the model validation. We have got 0.12, 0.31, and 0.14 rmse respectively. It seems XGBoost Regressor is giving better performance in all other methods. ( see here for more details) 
+We have used the Lasso method, XGBoost Regressor, and XGBClassifier for the model validation. We have got 0.12, 0.31, and 0.14 rmse respectively. It seems XGBoost Regressor is giving better performance in all other methods. [see here for more details]()
 
 ## Hyperparameter Tunning 
 
-Hyperparameter tunning report
+[Hyperparameter tunning report]()
  
 ## Tuning of Tree-based parameters
 
-Learning rate (prevent overfitting), max_depth (more complex and overfit model with high value), gamma (conservative algorithm with large value), min_child_weigh (conservative algorithm with larger min_child_weight), colsample_bytree, min_child_weight, colsample_bytree, and Subsample are a few parameters which we have tuned here (See here for details Link1, link2) 
+Learning rate (prevent overfitting), max_depth (more complex and overfit model with high value), gamma (conservative algorithm with large value), min_child_weigh (conservative algorithm with larger min_child_weight), colsample_bytree, min_child_weight, colsample_bytree, and Subsample are a few parameters which we have tuned here 
+[Link1](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/tree/main/IMDB%20movie%20Ratings/Project%20report) [link2] () 
 
 ## Tuning regularization parameters
 
-We have tuned Lambda: L2 regularization and  Alpha: L1 regularization term on weights. Increasing this value will make the model more conservative. The default value is 1 and the best lambda was 1. The default value for Alpha is 0. Our best alpha was 0.1 (See here for more details link1, link2)
+We have tuned Lambda: L2 regularization and  Alpha: L1 regularization term on weights. Increasing this value will make the model more conservative. The default value is 1 and the best lambda was 1. The default value for Alpha is 0. Our best alpha was 0.1 [Link1](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/tree/main/IMDB%20movie%20Ratings/Project%20report) [link2] ()
 
 After feeding all the best tree-based and regularization parameters, we have found the five best features which are playing an important role in increasing the movie ratings. These 5 features are f12135 score 97, f12137 score 95, f8741 score 60, f12136 score 60, f7980 score 49
 
 ## Hyper-parameter tuning by grid search
 
 We have also run the gird search to find the best parameter values for the model. After running grid search the best values were colsample_bytree -0.5, learning_rate - 0.01, max_depth - 7, min_child_weight - 1, n_estimators - 200, subsample - 0.6. 
-The best features we found were f7979 score 150, f12090 score 73,f8697 score 65, f11259 score 63, f12092 score 56. ( see here fro more details) 
+The best features we found were f7979 score 150, f12090 score 73,f8697 score 65, f11259 score 63, f12092 score 56. [see here for more details]() 
 
 ## Hyper-parameter tuning by Random Search
 
 We have also tried the Random search to find the best parameter values for the model. After running random search, the best values were subsample - 0.6, n_estimators - 25, min_child_weight - 10, max_depth - 11, learning_rate - 1.0, colsample_bytree - 0.9 
-The best features we found h were f7976 score 542, f7979 score 484, f12136 score 477, f12137 score 432, f8741 score 384 (see here for more details) 
+The best features we found h were f7976 score 542, f7979 score 484, f12136 score 477, f12137 score 432, f8741 score 384 [see here for more details]()
 
 ## Credits
 
