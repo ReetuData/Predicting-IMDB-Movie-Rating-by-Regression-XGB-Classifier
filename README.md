@@ -114,48 +114,48 @@ We have performed Exploratory data Analysis to perform initial investigations on
 
 ## Data preprocessing: Encoding
 
-[Data preprocessing Report]()
+[Data preprocessing Report link1](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/4%20Data%20handling%20for%20%20Preprocessing%20and%20%20Scaling%20.ipynb)[link2](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/5%20Data%20encoding%20and%20Modeling.ipynb)
 
 Before fitting our data to any model, we must make sure all our categorical features areas are in numerical form. Here we have categorical columns like titleId, title, region, titleType, directors, writers, primaryName_Director, primaryProfession_director, Dir_knownForTitles, Decade. We have used oneHotencoder to convert it into numerical columns. Columns like genres, Dir_knownForTitles contain more than comma-separated values in single columns. For that, we have used the multilabelBinarizer which can easily deal with multi values.
  
- We have concatenated both encoded data frames and now our data is ready to fit in the model [See here for more details] ()
+ We have concatenated both encoded data frames and now our data is ready to fit in the model [Link1](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/4%20Data%20handling%20for%20%20Preprocessing%20and%20%20Scaling%20.ipynb)[link2](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/5%20Data%20encoding%20and%20Modeling.ipynb) 
  
 ## Modeling
 
-Modeling report
+[Modeling report](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/5%20Data%20encoding%20and%20Modeling.ipynb)
 
-We have started with the regression model. We have fit the model on to train the data set and predict the value of the test data set as y_pred. The model performance was evaluated from the r_squared values, which was 0.32 in our case. [Link1](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/tree/main/IMDB%20movie%20Ratings/Project%20report)[link2] () 
+We have started with the regression model. We have fit the model on to train the data set and predict the value of the test data set as y_pred. The model performance was evaluated from the r_squared values, which was 0.32 in our case. [Link1](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/tree/main/IMDB%20movie%20Ratings/Project%20report)[link2] (https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/5%20Data%20encoding%20and%20Modeling.ipynb) 
 
 ## Model Validation 
 
-[Model validation]()
+[Model validation](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/5%20Data%20encoding%20and%20Modeling.ipynb)
 
-We have used the Lasso method, XGBoost Regressor, and XGBClassifier for the model validation. We have got 0.12, 0.31, and 0.14 rmse respectively. It seems XGBoost Regressor is giving better performance in all other methods. [see here for more details]()
+We have used the Lasso method, XGBoost Regressor, and XGBClassifier for the model validation. We have got 0.12, 0.31, and 0.14 rmse respectively. It seems XGBoost Regressor is giving better performance in all other methods. [see here for more details](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/5%20Data%20encoding%20and%20Modeling.ipynb)
 
 ## Hyperparameter Tunning 
 
-[Hyperparameter tunning report]()
+[Hyperparameter tunning report](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/5%20Data%20encoding%20and%20Modeling.ipynb)
  
 ## Tuning of Tree-based parameters
 
 Learning rate (prevent overfitting), max_depth (more complex and overfit model with high value), gamma (conservative algorithm with large value), min_child_weigh (conservative algorithm with larger min_child_weight), colsample_bytree, min_child_weight, colsample_bytree, and Subsample are a few parameters which we have tuned here 
-[Link1](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/tree/main/IMDB%20movie%20Ratings/Project%20report) [link2] () 
+[Link1](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/tree/main/IMDB%20movie%20Ratings/Project%20report),[link2] (https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/5%20Data%20encoding%20and%20Modeling.ipynb) 
 
 ## Tuning regularization parameters
 
-We have tuned Lambda: L2 regularization and  Alpha: L1 regularization term on weights. Increasing this value will make the model more conservative. The default value is 1 and the best lambda was 1. The default value for Alpha is 0. Our best alpha was 0.1 [Link1](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/tree/main/IMDB%20movie%20Ratings/Project%20report) [link2] ()
+We have tuned Lambda: L2 regularization and  Alpha: L1 regularization term on weights. Increasing this value will make the model more conservative. The default value is 1 and the best lambda was 1. The default value for Alpha is 0. Our best alpha was 0.1 [Link1](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/tree/main/IMDB%20movie%20Ratings/Project%20report), [link2] (https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/5%20Data%20encoding%20and%20Modeling.ipynb)
 
 After feeding all the best tree-based and regularization parameters, we have found the five best features which are playing an important role in increasing the movie ratings. These 5 features are f12135 score 97, f12137 score 95, f8741 score 60, f12136 score 60, f7980 score 49
 
 ## Hyper-parameter tuning by grid search
 
 We have also run the gird search to find the best parameter values for the model. After running grid search the best values were colsample_bytree -0.5, learning_rate - 0.01, max_depth - 7, min_child_weight - 1, n_estimators - 200, subsample - 0.6. 
-The best features we found were f7979 score 150, f12090 score 73,f8697 score 65, f11259 score 63, f12092 score 56. [see here for more details]() 
+The best features we found were f7979 score 150, f12090 score 73,f8697 score 65, f11259 score 63, f12092 score 56. [see here for more details](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/5%20Data%20encoding%20and%20Modeling.ipynb) 
 
 ## Hyper-parameter tuning by Random Search
 
 We have also tried the Random search to find the best parameter values for the model. After running random search, the best values were subsample - 0.6, n_estimators - 25, min_child_weight - 10, max_depth - 11, learning_rate - 1.0, colsample_bytree - 0.9 
-The best features we found h were f7976 score 542, f7979 score 484, f12136 score 477, f12137 score 432, f8741 score 384 [see here for more details]()
+The best features we found h were f7976 score 542, f7979 score 484, f12136 score 477, f12137 score 432, f8741 score 384 [see here for more details](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/5%20Data%20encoding%20and%20Modeling.ipynb)
 
 ## Credits
 
