@@ -1,5 +1,7 @@
 # Predicting IMDB Movie Rating by Regression & XGB Classifier 
 
+![Book logo](https://github.com/ReetuData/ReetuData/blob/main/1704472.png)
+
 ##  Table of contents
 	Libraries
 	Problem
