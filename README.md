@@ -1,10 +1,7 @@
 # Predicting IMDB Movie Rating by Regression & XGB Classifier 
 
 ##  Table of contents
-
-	Technologies
-	Setup
-	Installation
+	Libraries
 	Problem
 	Data 
 	Model - Regression
@@ -27,9 +24,21 @@
 	Credits
 	More resources
 
-## Technologies
-## Installation
-## Setup
+## Libraries
+
+	import pandas as pd
+	import math
+	import numpy as np
+	import seaborn as sns
+	from scipy.stats import norm
+	from scipy import stats
+	import matplotlib.pyplot as plt
+	import seaborn as sns
+	from sklearn.neighbors import KNeighborsClassifier
+	from sklearn.metrics import classification_report
+	from sklearn.model_selection import train_test_split
+	from sklearn.metrics import roc_auc_score
+	from sklearn.model_selection import GridSearchCV
 
 ## Problem
 
