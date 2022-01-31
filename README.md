@@ -89,7 +89,7 @@ RMSE is just the square root of MSE, which is used for determining accuracy.
 
 ## Data Preparation and Cleaning
 
-[Data Cleaning report](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/1%20Cleaning%20and%20merging%20Data%20part%20-1%20.ipynb)
+[Data Cleaning report](https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/1%20Cleaning%20and%20merging%20Data%20part%20-1%20.ipynb), [Link2] (https://github.com/ReetuData/Predicting-IMDB-Movie-Rating-by-Regression-XGB-Classifier/blob/main/IMDB%20movie%20Ratings/2%20IMDB%20data%20wrangling%20and%20Cleaning%20Part%202.ipynb)
 
 ### Merging files 
 
